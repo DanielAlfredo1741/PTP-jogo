@@ -1,0 +1,163 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    color: #493e45;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+.body-conteiner{
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.opcoes{
+    
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+.escolha::before{
+    position: absolute;
+    content: "";
+    top: -45px;
+    left: 86%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f00ff, #fa1cc2);
+    animation: sb 5s linear infinite;
+}
+
+@keyframes sb{
+    50%{
+        left: 84%;
+        top: -40px;
+    }
+}
+.escolha::after{
+    position: absolute;
+    content: "";
+    top: 15px;
+    left: 80%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffffff,#ffffff);
+    animation: sa 5s linear infinite;
+}
+
+@keyframes sa{
+    50%{
+        left: 76%;
+        top: 20px;
+    }
+}
+.escolha{
+
+    width: 540px;
+    display: flex;
+    align-items: center ;
+    margin-top: 40px;
+    justify-content: space-between;
+   
+}
+.escolha button {
+    color: #fff;
+    border:  none;
+    outline: none;
+    padding: 12px 34px;
+    cursor: pointer;
+    background-color: #493e45;
+    border-radius: 3px;
+    box-shadow: 4px 6px 8px rgb(36, 35, 35);
+    border-bottom: 4px solid #3a3338;
+    
+
+}.escolha button:hover{
+    background-color: #312e30;
+    border-bottom: 4px solid #2e292c;
+}
+.verificar{
+    width: 540px;
+    display: flex;
+    align-items: center ;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.verificar button {
+    color: #493e45;
+    border: 1px solid #c7c7c7;
+    border-bottom: 4px solid #c7c7c7;
+    outline: none;
+    cursor: pointer;
+    padding: 10px 54px;
+    box-shadow:  4px 6px 8px rgb(121, 119, 119);
+    background-color: rgb(255, 255, 255);
+}.verificar button:hover{
+    color: #3b3b3b;
+    background-color: #f1f1f1;
+}
+.resolt{
+
+    color: #493e45;
+    width: 600px;
+    height: 100px;
+    margin-top: 50px;
+    display: flex;
+    border: 1px solid #c7c7c7;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #a3a3a3;
+    border-bottom: 4px solid #c7c7c7;
+    box-shadow:  4px 6px 8px rgb(121, 119, 119);
+}
+
+.resolt::before{
+    position: absolute;
+    content: "";
+    top: 450px;
+    right: 82%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #7f00ff, #fa1cc2);
+    animation: sb1 5s linear infinite;
+}
+
+@keyframes sb1{
+    50%{
+        right: 80%;
+        top: 445px;
+    }
+}
+.resolt::after{
+    position: absolute;
+    content: "";
+    top: 420px;
+    right: 74%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #ffffff,#ffffff);
+    animation: sa1 5s linear infinite;
+}
+
+@keyframes sa1{
+    50%{
+        right: 78%;
+        top: 425px;
+    }
+}
